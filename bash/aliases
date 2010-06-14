@@ -1,0 +1,45 @@
+# aliases
+alias cls=clear
+alias e=mate
+alias l='ls -lh'
+alias la='ls -a'
+alias lh='ls -h1'
+alias ll='ls -ahl'
+
+# application aliases
+alias mate="open -a TextMate"
+alias e="open -a TextMate"
+alias coda="open -a Coda"
+
+# git aliases
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gl="git log"
+
+# ditz aliases
+alias d="ditz"
+alias din="ditz init"
+
+alias da="ditz add"
+alias ds="ditz start"
+alias dstop="ditz stop"
+alias dc="ditz close"
+alias drop="ditz drop"
+alias dedit="ditz edit"
+alias dass="ditz assign"
+alias dunn="ditz unassign"
+
+alias de="ditz html"
+
+alias dar="ditz add-release"
+alias dr="ditz release"
+
+alias dac="ditz add-component"
+alias dsc="ditz set-component"
+
+alias whotunes="netstat | grep daap"
+
+
+
+
