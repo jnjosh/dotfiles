@@ -9,14 +9,13 @@ alias zipr="zip -r"
 
 # bash aliases
 alias cdal="cd ~/bin/dotfiles"
-alias ea="e ~/bin/dotfiles/bash/aliases"
 alias rrc="source ~/.bashrc"
+alias ea="mate -W ~/bin/dotfiles/bash/aliases && rrc"
 
 # finder
 alias o="open . &"
 
 # application aliases
-alias mate="open -a TextMate"
 alias e="open -a TextMate"
 alias coda="open -a Coda"
 
@@ -41,6 +40,17 @@ alias whotunes="netstat | grep daap"
 
 # ruby on rails aliases
 alias ss="./script/server"
+alias sg="./script/generate"
+alias sp="./script/plugin install"
+alias sc="./script/console"
+alias r="rake"
+alias rmig="rake db:migrate"
+
+# functions
+function take {
+	mkdir $1
+	cd $1
+}
 
 
 
