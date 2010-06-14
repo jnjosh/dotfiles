@@ -6,6 +6,10 @@ alias la='ls -a'
 alias lh='ls -h1'
 alias ll='ls -ahl'
 alias zipr="zip -r"
+
+# bash aliases
+alias cdal="cd ~/bin/dotfiles"
+alias ea="e ~/bin/dotfiles/bash/aliases"
 alias rrc="source ~/.bashrc"
 
 # finder
