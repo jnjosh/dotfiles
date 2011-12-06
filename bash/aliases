@@ -1,4 +1,5 @@
 # global aliases
+alias sublime="open -a 'Sublime Text 2'"
 alias cls=clear
 alias e=mate
 alias l='ls -lh'
@@ -16,7 +17,7 @@ alias ea="mate -W ~/bin/dotfiles/bash/aliases && rrc"
 alias o="open . &"
 
 # application aliases
-alias e="open -a TextMate"
+#alias e="open -a TextMate"
 alias coda="open -a Coda"
 
 # processes aliases

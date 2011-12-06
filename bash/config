@@ -20,9 +20,11 @@ function proml {
   esac
 
 PS1="${TITLEBAR}\
-$RED[\u@joshbookpro:\W$LIGHT_GREEN\$(parse_git_branch)$RED]\
+$RED[\u@joshbook:\W$LIGHT_GREEN\$(parse_git_branch)$RED]\
 $WHITE \$ "
 PS2='> '
 PS4='+ '
 }
 proml
+
+export PS1="\[\033[31m\]\u\[\033[01;31m\]:\W \[\033[32m\]\`ruby -e \"git_status = (%x{git status 2> /dev/null}); last_commit = (%x{git log --pretty=format:'%at' -1 2> /dev/null}).gsub(/^\* (.+)$/, '(\1) '); seconds = Time.now.to_f - last_commit.to_f; minutes = seconds.to_f / 60; ((seconds > 60*60*2) ? (time_since_commit = ('+2h')) : (time_since_commit = minutes.to_i.to_s + 'm') if (git_status != ''));print (%x{git branch 2> /dev/null}.split(%r{\n}).grep(/^\*/).first || '').gsub(/^\* (.+)$/, '( \1 | ' + time_since_commit.to_s + ' ) ')\"\`\[\033[37m\]$\[\033[00m\] "

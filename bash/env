@@ -5,9 +5,11 @@ export EDITOR="mate -w"
 
 export PATH=$PATH:/opt/local/bin
 export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin/sloc
+export PATH=$HOME/local/bin:$PATH
 export PATH=$PATH:~/Documents/Frameworks/narwhal/bin
 
-cd ~/Documents/Development
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
 export NARWHAL_ENGINE=jsc
+
